@@ -15,6 +15,9 @@
 		AB6B06562C2B544B009F2152 /* APIandTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B06552C2B544B009F2152 /* APIandTestingUITests.swift */; };
 		AB6B06582C2B544B009F2152 /* APIandTestingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B06572C2B544B009F2152 /* APIandTestingUITestsLaunchTests.swift */; };
 		AB6B06662C2B5538009F2152 /* APIManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B06652C2B5538009F2152 /* APIManager .swift */; };
+		ABA29EF82C2C86430042C0CD /* ContentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA29EF72C2C86430042C0CD /* ContentVM.swift */; };
+		ABA29EFB2C2C886C0042C0CD /* CoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA29EFA2C2C886C0042C0CD /* CoinsModel.swift */; };
+		ABA29EFD2C2CF9C20042C0CD /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA29EFC2C2CF9C20042C0CD /* CurrencyConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		AB6B06552C2B544B009F2152 /* APIandTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIandTestingUITests.swift; sourceTree = "<group>"; };
 		AB6B06572C2B544B009F2152 /* APIandTestingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIandTestingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB6B06652C2B5538009F2152 /* APIManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager .swift"; sourceTree = "<group>"; };
+		ABA29EF72C2C86430042C0CD /* ContentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentVM.swift; sourceTree = "<group>"; };
+		ABA29EFA2C2C886C0042C0CD /* CoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsModel.swift; sourceTree = "<group>"; };
+		ABA29EFC2C2CF9C20042C0CD /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		AB6B06382C2B5449009F2152 /* APIandTesting */ = {
 			isa = PBXGroup;
 			children = (
+				ABA29EF92C2C885E0042C0CD /* Model */,
+				ABA29EF62C2C86340042C0CD /* VM */,
+				ABA29EF52C2C86240042C0CD /* View */,
 				AB6B06642C2B5527009F2152 /* API */,
 				AB6B06392C2B5449009F2152 /* APIandTestingApp.swift */,
-				AB6B063B2C2B5449009F2152 /* ContentView.swift */,
 				AB6B063D2C2B544A009F2152 /* Assets.xcassets */,
 				AB6B063F2C2B544A009F2152 /* APIandTesting.entitlements */,
 				AB6B06402C2B544A009F2152 /* Preview Content */,
+				ABA29EFC2C2CF9C20042C0CD /* CurrencyConverter.swift */,
 			);
 			path = APIandTesting;
 			sourceTree = "<group>";
@@ -138,6 +147,30 @@
 				AB6B06652C2B5538009F2152 /* APIManager .swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		ABA29EF52C2C86240042C0CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB6B063B2C2B5449009F2152 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABA29EF62C2C86340042C0CD /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				ABA29EF72C2C86430042C0CD /* ContentVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		ABA29EF92C2C885E0042C0CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABA29EFA2C2C886C0042C0CD /* CoinsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA29EFB2C2C886C0042C0CD /* CoinsModel.swift in Sources */,
+				ABA29EFD2C2CF9C20042C0CD /* CurrencyConverter.swift in Sources */,
+				ABA29EF82C2C86430042C0CD /* ContentVM.swift in Sources */,
 				AB6B063C2C2B5449009F2152 /* ContentView.swift in Sources */,
 				AB6B063A2C2B5449009F2152 /* APIandTestingApp.swift in Sources */,
 				AB6B06662C2B5538009F2152 /* APIManager .swift in Sources */,
